@@ -1,0 +1,51 @@
+A comprehensive list of my published work may be found here: My Publications featured in Nature, The Astrophysical Journal, and Monthly Notices of the Royal Astronomical Society.
+
+A total of 318 citations as of February 14, 2020.
+
+Below are a selection of my publications from projects I’ve worked on throughout my M.Sc. and Ph.D. programs. 
+
+
+
+
+Two sub-millimetre bright protoclusters bounding the epoch of peak star formation activity
+
+We discovered two primordial galaxy clusters that contained groups of a rare type of galaxy. These galaxy clusters are forming stars 10,000x more rapidly than the average galaxy cluster, making them extraordinary celestial objects.
+
+— Lacaille, K. et al., 2019, MNRAS (accepted, cited 6x)
+
+
+
+
+
+Galaxy growth in a massive halo in the first billion years of cosmic history
+
+We uncovered a pair of extremely massive star-forming galaxies existing when the Universe was only 5% of its current age. The larger galaxy is one of the rarest galaxies that should exist in the Universe at this epoch.
+
+— Marrone, D., et al., 2018, Nature (cited 71x)
+
+Press release: National Radio Astronomy Observatory https://public.nrao.edu/news/2017-alma-galaxies-dark-matter/
+https://arxiv.org/pdf/1712.03020.pdf
+
+
+
+
+
+A massive core for a cluster of galaxies at a redshift of 4.3
+
+We found a single primordial galaxy cluster comprised of 14 explosive galaxies. This extragalactic object is a uniquely massive and dense system that could be building one of the most massive structures in the Universe today.
+
+— Miller, T., et al., 2018, Nature (cited 35x)
+
+Press release: BBC
+https://arxiv.org/pdf/1804.09231.pdf
+
+
+
+
+
+The JCMT Transient Survey: Data Reduction and Calibration Methods
+
+We calibrated star maps in order to precisely measure tiny changes in a protostar’s brightness. Upon comparing just a few maps, my code was able to align the maps to an error smaller than 100th the size of a single pixel, resulting in unprecedented measures of protostars.
+
+— Mairs, S., et al., 2017, ApJ (cited 15x)
+https://iopscience.iop.org/article/10.3847/1538-4357/aa7844/pdf
