@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 class AdsMetrics:
 
     def __init__(self, author, metrics):
@@ -44,22 +45,22 @@ class AdsMetrics:
             None
 
         Raises:
-            None
+            FileNotFoundError: The ADS development key file does not exist.
         '''
         from os.path import isfile
 
         # Import and set development key for ADS
         ADS_DEV_KEY_file = "ADS_DEV_KEY.txt"
         if not isfile(ADS_DEV_KEY_file):
-            raise FileNotFoundError()
+            raise FileNotFoundError("The ADS development key file does not exist.")
 
         import ads
 
+        # Add key to access ADS API
         ADS_DEV_KEY = open(ADS_DEV_KEY_file).read().rstrip("\n")
-
         ads.config.token = ADS_DEV_KEY
 
-        # All papers with Lacaille, K as an author
+        # All papers with "LastName, FirstName" as an author
         all_papers = list(ads.SearchQuery(author=self.author, fl=[self.metrics]))
 
         # Find total citations and reads for each paper, and which has been refereed
@@ -70,6 +71,7 @@ class AdsMetrics:
         for paper in all_papers:
             total_citations += paper.citation_count
             total_reads += paper.read_count
+            # If paper is an arXiv e-print, don't count as refereed paper
             if paper.pub == 'arXiv e-prints':
                 n_papers_unrefereed += 1
             
@@ -85,5 +87,6 @@ class AdsMetrics:
 
 if __name__ == "__main__":
     
+    # Find metrics from ADS for "Lacaille, K"
     adsMetrics = AdsMetrics("Lacaille, K", ['citation_count', 'read_count', 'pub'])
     adsMetrics.get_ads_metrics()
